@@ -1,15 +1,15 @@
 #! /usr/bin/python
 
 """
-This script watches a specific process (second item in "cmd"), and logs the user out when the process exits.
+This script watches a specific process "appname" for a specific user "username", and logs the user out when the process exits.
 Tim Schutt, taschutt@syr.edu
 July, 2014
 """
 
 import os, subprocess, sys, time
 
-username = "test" # set to the shortname of the kiosk user
 appname = "Microsoft Remote Desktop" # set to the name of the app you wish to monitor
+username = "test" # set to the shortname of the kiosk user
 
 def processrunning():
   cmd = ["/usr/bin/pgrep", appname]
