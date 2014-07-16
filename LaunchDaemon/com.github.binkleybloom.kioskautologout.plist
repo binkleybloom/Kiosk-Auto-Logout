@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.github.binkleybloom</string>
+	<string>com.github.binkleybloom.kioskautologout</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sh</string>
@@ -14,7 +14,7 @@
 	<dict>
 		<key>PathState</key>
 		<dict>
-			<key>/Users/Shared/.com.github.binkleybloom.logoutnow</key>
+			<key>/Users/Shared/.com.github.binkleybloom.kioskautologout.logoutnow</key>
 			<true/>
 		</dict>
 	</dict>
