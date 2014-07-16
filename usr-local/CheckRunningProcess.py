@@ -6,10 +6,11 @@ Tim Schutt, taschutt@syr.edu
 July, 2014
 """
 
-import os, subprocess, sys, time
+import os, subprocess, sys
+from time import sleep
 
 appname = "Microsoft Remote Desktop" # set to the name of the app you wish to monitor
-username = "test" # set to the shortname of the kiosk user
+username = "username" # set to the shortname of the kiosk user
 
 def processrunning():
   cmd = ["/usr/bin/pgrep", appname]
@@ -19,16 +20,15 @@ def processrunning():
 
 def main():
   if processrunning():
-    time.sleep(1)
+    sleep(1)  # pause one second between checks
     main()
   else:
-    os.system("/usr/bin/touch /Users/Shared/.com.github.binkleybloom.logoutnow")
+    os.system("/usr/bin/touch /Users/Shared/.com.github.binkleybloom.kioskautologout.logoutnow")
     sys.exit(0)
 
 if __name__ == "__main__":
   if os.getlogin() == username:
-    time.sleep(10) # waits 10 seconds for application to launch before checking
+    sleep(10) # waits 10 seconds for application to launch before checking
     main()
   else:
-    print "Whoops! Wrong user."
     sys.exit(0)
