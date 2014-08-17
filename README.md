@@ -7,7 +7,9 @@ Installation
 ============
 
 Copy LaunchAgent/com.github.binkleybloom.kioskautologout-la.plist to /Library/LaunchAgents
+
 Copy LaunchDaemon/com.github.binkleybloom.kioskautologout-ld.plist to /Library/LaunchDaemons
+
 Copy the contents of usr-local to /usr/local
 
 Modify the appname and username variables in CheckRunningProcess.py to match your environment.
