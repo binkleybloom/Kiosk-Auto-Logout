@@ -9,6 +9,17 @@ Ross & Andrew's approach called for user action and two separate logins - user a
 
 I wanted to make the experience more seamless for the enduser. I create a user named "Windows", with the Windows icon as the user picture. When that user is clicked, it launches the Terminal application and immediately brings the user to the Windows login. When the Win user is finished, they log out of the Terminal Server, and as soon as they quit the application it immediately returns them to the OS X login screen.
 
+Installation
+============
+
+Copy LaunchAgent/com.github.binkleybloom.kioskautologout-la.plist to /Library/LaunchAgents
+
+Copy LaunchDaemon/com.github.binkleybloom.kioskautologout-ld.plist to /Library/LaunchDaemons
+
+Copy the contents of usr-local to /usr/local
+
+Modify the appname and username variables in CheckRunningProcess.py to match your environment (further detail below).
+
 Setup
 ======
 
@@ -26,18 +37,6 @@ Concerns
 Q - Isn't this really a rough way to log someone out? Will they have an opportunity to save their documents if needed?
 
 A - Yes, it is very heavy handed. No, they won't have a chance to save their docs once the application quits. However, if used in the controlled manner outlined above, it's a non-issue. Since the intent is for kiosk style functionality, the state of the OS X account is static and no user continuity is implied. Keep in mind that the VM/Terminal Server will provide all this - the Mac is a dumb terminal in this user's scope.
-
-
-Installation
-============
-
-Copy LaunchAgent/com.github.binkleybloom.kioskautologout-la.plist to /Library/LaunchAgents
-
-Copy LaunchDaemon/com.github.binkleybloom.kioskautologout-ld.plist to /Library/LaunchDaemons
-
-Copy the contents of usr-local to /usr/local
-
-Modify the appname and username variables in CheckRunningProcess.py to match your environment.
 
 Warnings
 ========
