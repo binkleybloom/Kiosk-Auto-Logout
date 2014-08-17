@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>edu.syr.cas.kiosk</string>
+	<string>com.github.binkleybloom.kioskautologout-la</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>python</string>

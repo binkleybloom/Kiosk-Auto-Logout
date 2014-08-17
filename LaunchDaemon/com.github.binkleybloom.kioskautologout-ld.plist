@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.github.binkleybloom.kioskautologout</string>
+	<string>com.github.binkleybloom.kioskautologout-ld</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sh</string>
