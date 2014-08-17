@@ -7,7 +7,7 @@ Initially inspired from Ross Shaffer and Andrew Uchenick's presentation "Replaci
 
 Ross & Andrew's approach called for user action and two separate logins - user authenticates to the Mac, user launches Citrix client, user authenticates to the Windows VM. 
 
-I wanted to make the experience more seamless for the enduser. I create a user named "Windows", with the Windows icon as the user picture. When that user is clicked, it immediately brings the user to the Windows login. When the Win user is finished, they log out of the Terminal Server, and as soon as they quit the application it immediately returns them to the OS X login screen.
+I wanted to make the experience more seamless for the enduser. I create a user named "Windows", with the Windows icon as the user picture. When that user is clicked, it launches the Terminal application and immediately brings the user to the Windows login. When the Win user is finished, they log out of the Terminal Server, and as soon as they quit the application it immediately returns them to the OS X login screen.
 
 Setup
 ======
@@ -25,7 +25,7 @@ Concerns
 
 Q - Isn't this really a rough way to log someone out? Will they have an opportunity to save their documents if needed?
 
-A - Yes, it is very heavy handed. No, they won't have a chance to save their docs once the application quits. However, if used in the controlled manner outlined above, it's a non-issue. Since the intent is for kiosk style functionality, the state of the account is static and no user continuity is implied. Keep in mind that the VM/Terminal Server will provide all this - the Mac is a dumb terminal in this user's scope.
+A - Yes, it is very heavy handed. No, they won't have a chance to save their docs once the application quits. However, if used in the controlled manner outlined above, it's a non-issue. Since the intent is for kiosk style functionality, the state of the OS X account is static and no user continuity is implied. Keep in mind that the VM/Terminal Server will provide all this - the Mac is a dumb terminal in this user's scope.
 
 
 Installation
