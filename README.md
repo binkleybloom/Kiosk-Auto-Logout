@@ -38,7 +38,7 @@ Concerns
 
 Q - Isn't this really a rough way to log someone out? Will they have an opportunity to save their documents if needed?
 
-A - Yes, it is very heavy handed. No, they won't have a chance to save their docs once the application quits. However, if used in the controlled manner outlined above, it's a non-issue. Since the intent is for kiosk style functionality, the state of the OS X account is static and no user continuity is implied. Keep in mind that the VM/Terminal Server will provide all this - the Mac is a dumb terminal in this user's scope.
+A - Yes, it is very heavy handed. No, they won't have a chance to save their docs once the application quits. However, if used in the controlled manner outlined above, it's a non-issue. Since the intent is for kiosk style functionality, the state of the OS X account is static and no user continuity is implied. Keep in mind that the VM/Terminal Server will provide all this - the Mac is a dumb terminal within the "Windows" user's scope.
 
 Warnings
 ========
