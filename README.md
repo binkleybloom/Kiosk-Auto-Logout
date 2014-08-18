@@ -12,6 +12,8 @@ I wanted to make the experience more seamless for the enduser. I create a user n
 Installation
 ============
 
+(TODO: packaging with The Luggage)
+
 Copy LaunchAgent/com.github.binkleybloom.kioskautologout-la.plist to /Library/LaunchAgents
 
 Copy LaunchDaemon/com.github.binkleybloom.kioskautologout-ld.plist to /Library/LaunchDaemons
