@@ -7,7 +7,7 @@ Initially inspired from Ross Shaffer and Andrew Uchenick's presentation "Replaci
 
 Ross & Andrew's approach called for user action and two separate logins - user authenticates to the Mac, user launches Citrix client, user authenticates to the Windows VM. 
 
-I wanted to make the experience more seamless for the enduser. I create a user named "Windows", with the Windows icon as the user picture. When that user is clicked, it launches the Terminal application and immediately brings the user to the Windows login. When the Win user is finished, they log out of the Terminal Server, and as soon as they quit the application it immediately returns them to the OS X login screen.
+I wanted to make the experience more seamless for the enduser. I create a user named "Windows", with the Windows icon as the user picture. When that user is clicked, it launches the Microsoft Remote Desktop application and immediately brings the user to the Windows login. When the Win user is finished, they log out of the Terminal Server, and as soon as they quit the application it immediately returns them to the OS X login screen.
 
 Installation
 ============
